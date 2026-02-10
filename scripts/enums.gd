@@ -9,8 +9,8 @@ enum SymbolCategory{
 }
 
 enum SymbolRank{
-	CRIMSON,
 	VOILET,
+	CRIMSON,
 	GOLD,
 	DIAMOND
 }
@@ -22,4 +22,12 @@ enum PatternType{
 	DIAG_3,
 	DIAG_4,
 	DIAG_5,
+	DIAMOND_HEAD,
+	DIAMOND
+}
+
+enum TokenType{
+	SINGLE_DELETE,
+	HORIZONTAL_DELETE,
+	VERTICAL_DELETE,
 }

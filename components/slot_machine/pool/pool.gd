@@ -1,16 +1,12 @@
 extends Node
 class_name SlotMachinePool
 
-@export var pool: Dictionary[SymbolData, int] = {}
+@export var symbol_pool: Dictionary[SymbolData, int] = {}
 
-var weights: Array[int] = []
-var indexes: Array[SymbolData] = []
+@onready var symbol: SlotMachinePoolSymbol = $Symbol
+@onready var token: SlotMachinePoolToken = $Token
+
 
 func init():
-	for key in pool.keys():
-		weights.append(pool[key])
-		indexes.append(key)
-
-func next() -> Symbol:
-	var data: SymbolData = indexes[Global.rng.rand_weighted(weights)]
-	return SymbolFactory.create(data)
+	symbol.pool = symbol_pool
+	symbol.init()

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://chgc6to4fdot3"]
+
+[ext_resource type="Script" uid="uid://ckhl40v1y22pr" path="res://components/tokens/selector/selector.gd" id="1_1spf6"]
+
+[node name="Selector" type="Node2D" unique_id=655529110]
+script = ExtResource("1_1spf6")

@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://csuhwqi0o8cnk"]
+
+[ext_resource type="FontFile" uid="uid://cpomc5yc0rl37" path="res://assets/fonts/BoldPixels.ttf" id="1_5x3i2"]
+
+[resource]
+default_font = ExtResource("1_5x3i2")
+Label/fonts/font = ExtResource("1_5x3i2")

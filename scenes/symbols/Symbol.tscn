@@ -2,5 +2,5 @@
 
 [ext_resource type="Script" uid="uid://bc621r1opf5re" path="res://scripts/symbols/symbol.gd" id="2_6ttk3"]
 
-[node name="Symbol" type="TextureRect" unique_id=987798748]
+[node name="Symbol" type="Sprite2D" unique_id=745588358]
 script = ExtResource("2_6ttk3")

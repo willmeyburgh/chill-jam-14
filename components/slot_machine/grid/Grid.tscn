@@ -2,5 +2,9 @@
 
 [ext_resource type="Script" uid="uid://bd07pfuchmta8" path="res://components/slot_machine/grid/grid.gd" id="1_o743i"]
 
-[node name="Grid" type="Node" unique_id=598430322]
+[node name="Grid" type="Control" unique_id=483519626]
+clip_contents = true
+custom_minimum_size = Vector2(240, 240)
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_o743i")

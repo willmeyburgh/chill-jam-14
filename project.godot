@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Enums="*uid://bmtfk217qs4jv"
 Global="*uid://cda0ye1iigv02"
+Utils="*uid://cf4gpt6cje3x2"
 
 [display]
 
@@ -28,12 +29,17 @@ window/stretch/mode="viewport"
 window/stretch/scale=2.0
 window/stretch/scale_mode="integer"
 
+[gui]
+
+theme/custom="res://resources/theme.tres"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"

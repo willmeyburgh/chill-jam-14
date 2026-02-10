@@ -6,7 +6,7 @@
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aybx2"]
 atlas = ExtResource("2_oasbl")
-region = Rect2(0, 0, 64, 64)
+region = Rect2(0, 0, 48, 48)
 
 [node name="StandardSymbol" unique_id=987798748 instance=ExtResource("1_v7r6v")]
 texture = SubResource("AtlasTexture_aybx2")

@@ -4,3 +4,19 @@
 
 [node name="Patterns" type="Node" unique_id=2059083732]
 script = ExtResource("1_glrrb")
+pattern_score = Dictionary[int, Vector2i]({
+0: Vector2i(0, 3),
+1: Vector2i(0, 5),
+2: Vector2i(0, 7),
+3: Vector2i(0, 4),
+4: Vector2i(0, 7),
+5: Vector2i(0, 10),
+6: Vector2i(0, 15),
+7: Vector2i(0, 30)
+})
+
+[node name="Timer" type="Timer" parent="." unique_id=195372534]
+wait_time = 0.25
+one_shot = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
