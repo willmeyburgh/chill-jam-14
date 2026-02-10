@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dhy3ahkv7vi1k"]
+
+[ext_resource type="Script" uid="uid://dhau7snmbswhc" path="res://components/slot_machine/patterns/patterns.gd" id="1_glrrb"]
+
+[node name="Patterns" type="Node" unique_id=2059083732]
+script = ExtResource("1_glrrb")

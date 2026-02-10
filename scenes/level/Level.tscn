@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://c75tc2foc5sue"]
+
+[ext_resource type="PackedScene" uid="uid://bdsi7cjn5og3l" path="res://scenes/slot_machine/SlotMachine.tscn" id="1_751o5"]
+[ext_resource type="Script" uid="uid://db4d250yllc5k" path="res://scripts/level/level.gd" id="1_cne4c"]
+
+[node name="Level" type="Control" unique_id=2029342528]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cne4c")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1177057002]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.11764706, 0.7372549, 0.4509804, 1)
+
+[node name="SlotMachine" parent="." unique_id=1400845858 instance=ExtResource("1_751o5")]
+layout_mode = 1

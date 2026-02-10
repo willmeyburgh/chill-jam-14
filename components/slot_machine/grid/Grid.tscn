@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dbr85am5mveey"]
+
+[ext_resource type="Script" uid="uid://bd07pfuchmta8" path="res://components/slot_machine/grid/grid.gd" id="1_o743i"]
+
+[node name="Grid" type="Node" unique_id=598430322]
+script = ExtResource("1_o743i")

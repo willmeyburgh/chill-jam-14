@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://bdsi7cjn5og3l"]
+
+[ext_resource type="Texture2D" uid="uid://deg80q5x5ypks" path="res://assets/sprites/slot_machine.png" id="1_b50e2"]
+[ext_resource type="Script" uid="uid://o32uwuggigfe" path="res://scripts/slot_machine/slot_machine.gd" id="1_yydt5"]
+[ext_resource type="PackedScene" uid="uid://d0vh4vx4y2dr4" path="res://scenes/slot_machine/Column.tscn" id="2_yydt5"]
+[ext_resource type="PackedScene" uid="uid://b4kp34qobf0uf" path="res://components/slot_machine/pool/Pool.tscn" id="4_3uy30"]
+[ext_resource type="PackedScene" uid="uid://dbr85am5mveey" path="res://components/slot_machine/grid/Grid.tscn" id="5_b85sr"]
+[ext_resource type="Script" uid="uid://bjaqqktep3qw7" path="res://scripts/symbols/data.gd" id="5_qpgxm"]
+[ext_resource type="PackedScene" uid="uid://dhy3ahkv7vi1k" path="res://components/slot_machine/patterns/Patterns.tscn" id="7_qpgxm"]
+
+[sub_resource type="Resource" id="Resource_rrg12"]
+script = ExtResource("5_qpgxm")
+metadata/_custom_type_script = "uid://bjaqqktep3qw7"
+
+[sub_resource type="Resource" id="Resource_5yw1u"]
+script = ExtResource("5_qpgxm")
+category = 1
+metadata/_custom_type_script = "uid://bjaqqktep3qw7"
+
+[sub_resource type="Resource" id="Resource_pfme1"]
+script = ExtResource("5_qpgxm")
+category = 2
+metadata/_custom_type_script = "uid://bjaqqktep3qw7"
+
+[sub_resource type="Resource" id="Resource_juvtv"]
+script = ExtResource("5_qpgxm")
+category = 3
+metadata/_custom_type_script = "uid://bjaqqktep3qw7"
+
+[node name="SlotMachine" type="Control" unique_id=1400845858]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yydt5")
+
+[node name="Columns" type="HBoxContainer" parent="." unique_id=193031184]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="1" parent="Columns" unique_id=466218533 instance=ExtResource("2_yydt5")]
+layout_mode = 2
+
+[node name="2" parent="Columns" unique_id=1791445993 instance=ExtResource("2_yydt5")]
+layout_mode = 2
+
+[node name="3" parent="Columns" unique_id=598088766 instance=ExtResource("2_yydt5")]
+layout_mode = 2
+
+[node name="4" parent="Columns" unique_id=1257213317 instance=ExtResource("2_yydt5")]
+layout_mode = 2
+
+[node name="5" parent="Columns" unique_id=64095896 instance=ExtResource("2_yydt5")]
+layout_mode = 2
+
+[node name="Background" type="TextureRect" parent="." unique_id=1034562304]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -160.0
+offset_right = 160.0
+offset_bottom = 160.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_b50e2")
+
+[node name="Pool" parent="." unique_id=589577346 instance=ExtResource("4_3uy30")]
+pool = Dictionary[ExtResource("5_qpgxm"), int]({
+SubResource("Resource_rrg12"): 1000,
+SubResource("Resource_5yw1u"): 1000,
+SubResource("Resource_pfme1"): 1000,
+SubResource("Resource_juvtv"): 1000
+})
+
+[node name="Grid" parent="." unique_id=598430322 instance=ExtResource("5_b85sr")]
+
+[node name="Patterns" parent="." unique_id=2059083732 instance=ExtResource("7_qpgxm")]

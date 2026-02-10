@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://ceyoohxg1jmwq"]
+
+[ext_resource type="PackedScene" uid="uid://cw5i1pmfjgeo3" path="res://scenes/symbols/Symbol.tscn" id="1_v7r6v"]
+[ext_resource type="Script" uid="uid://bfi314066mksw" path="res://scripts/symbols/standard.gd" id="2_lpdbx"]
+[ext_resource type="Texture2D" uid="uid://br71ajiwx4bxl" path="res://assets/sprites/symbols.png" id="2_oasbl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aybx2"]
+atlas = ExtResource("2_oasbl")
+region = Rect2(0, 0, 64, 64)
+
+[node name="StandardSymbol" unique_id=987798748 instance=ExtResource("1_v7r6v")]
+texture = SubResource("AtlasTexture_aybx2")
+script = ExtResource("2_lpdbx")
+rank_values = Dictionary[int, int]({
+0: 1,
+1: 2,
+2: 5,
+3: 10
+})

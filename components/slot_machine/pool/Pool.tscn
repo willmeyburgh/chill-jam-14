@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b4kp34qobf0uf"]
+
+[ext_resource type="Script" uid="uid://leb6m22rmi8y" path="res://components/slot_machine/pool/pool.gd" id="1_8u6i1"]
+
+[node name="Pool" type="Node" unique_id=589577346]
+script = ExtResource("1_8u6i1")
